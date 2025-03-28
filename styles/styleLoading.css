@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-color: black;
+
+}
+
+.fondo {
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.fondoImagen {
+    width: 100%;    /* Ancho máximo del contenedor */
+    height: 100%;  
+}
+
+
+.logo {
+    position: absolute;
+    width: 9%;
+    top: 40vh;
+    left: 43vw;
+}
