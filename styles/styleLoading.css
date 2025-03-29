@@ -76,6 +76,10 @@ body {
         opacity: 1;
     }
 
+    90% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 0;
     }
@@ -96,9 +100,9 @@ body {
     background-color: white;
     top: 20vh;
     left: 30vw;
-    animation: logInAparicion 1s ease-in forwards;
+    animation: logInAparicion 0.5s ease-in forwards;
     animation-delay: 2.5s;
-    opacity: 0;
+    opacity: 0; /* Cambiar a 0*/
 }
 
 @keyframes logInAparicion {
@@ -172,4 +176,38 @@ button:hover {
 
 .segundoH3 {
     font-size: 0.7em;
+}
+
+@media (max-width: 430px) {
+    .logo {
+        width: 20%;
+        top: 40vh;
+        left: 40vw;
+    }
+
+    .LogIn {
+        width: 55vw;
+        height: 60vh;
+        padding: 5vh;
+        top: 14vh;
+        left: 10vw;
+    }
+
+    .LogIn img {
+        width: 25%;
+    }
+
+    .formLogIn button {
+        width: 80%;
+    }
+
+    .formLogIn {
+        margin-top: 2em;
+        width: 100%;
+        left: 5%;
+    }
+
+    .formLogIn input {
+        width: 90%;
+    }
 }

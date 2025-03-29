@@ -116,7 +116,7 @@ body {
     width: 9%;
     top: 40vh;
     left: 45vw;
-    animation: logoAparicion 2.5s ease-in-out forwards;
+    animation: logoAparicion 2s ease-in-out forwards;
     animation-delay: 3.7s;
     opacity: 0;
 }
@@ -132,5 +132,36 @@ body {
 
     80% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .containerUsuario {
+        width: 60vw;
+        top: 25vh;
+        left: 12vw;
+    }
+
+    .logo {
+        width: 20%;
+        margin-bottom: 1em;
+    }
+
+    .containerUsuario h2 {
+        font-size: 1.8em;
+        margin: 0.5em 0;
+    }
+
+    .fotoUsuario {
+        width: 20vw;  /* Asegura que el ancho sea igual */
+        height: 20vw; /* Asegura que la altura sea igual */
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .logo2 {
+        width: 20%;
+        top: 40vh;
+        left: 40vw;  
     }
 }
