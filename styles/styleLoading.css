@@ -1,3 +1,39 @@
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Myriad Pro Light"), url("../fonts/MyriadPro-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Myriad Pro Regular"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Myriad Pro Bold"), url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+h1 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 700; /* Bold */
+}
+
+h2 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+h3 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 300; /* Light */
+}
+
 body {
     margin: 0;
     background-color: black;
@@ -14,6 +50,8 @@ body {
 .fondoImagen {
     width: 100%;    /* Ancho máximo del contenedor */
     height: 100%;  
+    object-fit: cover;
+    object-position: center 20%;
 }
 
 
@@ -21,7 +59,7 @@ body {
     position: absolute;
     width: 9%;
     top: 40vh;
-    left: 43vw;
+    left: 45vw;
     animation: logoAparicion 2.5s ease-in-out forwards;
 }
 
@@ -41,4 +79,97 @@ body {
     100% {
         opacity: 0;
     }
+}
+
+.LogIn {
+    position: absolute;
+    border: 1px solid black;
+    width: 30vw;
+    height: 45vh;
+    padding: 7vh;
+    border-radius: 40px ;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente (si el contenedor tiene altura) */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+    background-color: white;
+    top: 20vh;
+    left: 30vw;
+    animation: logInAparicion 1s ease-in forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+@keyframes logInAparicion {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.LogIn img {
+    width: 12%;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0vh;
+}
+
+.primerH3 {
+    font-size: 1em;
+    margin-bottom: 0vh;
+}
+
+.formLogIn {
+    width: 80%;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formLogIn label{
+    text-align: left;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.formLogIn input {
+    margin-top: 3px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    width: 100%;
+    height: 2.5em;
+    padding: 0px 10px;
+}
+
+.formLogIn button {
+    width: 50%;
+    margin-top: 8px;
+    background-color: #ff6f2c;
+    padding: 13px;
+    border: none;
+    border-radius: 22px;
+    font-family: 'Myriad Pro', sans-serif;
+    color: white;
+    font-size: 1em;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #b4562a;
+    cursor: pointer;
+    transform: scale(1.05); 
+    transition: 0.3s ease-in-out; 
+}
+
+.segundoH3 {
+    font-size: 0.7em;
 }

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Myriad Pro Light"), url("../fonts/MyriadPro-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Myriad Pro Regular"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Myriad Pro Bold"), url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+h1 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 700; /* Bold */
+}
+
+h2 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+h3 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 300; /* Light */
+}
+
+body {
+    margin: 0;
+    background-color: black;
+
+}
+
+.fondo {
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.fondoImagen {
+    width: 100%;    /* Ancho máximo del contenedor */
+    height: 100%;  
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+
+.containerUsuario {
+    opacity: 0;
+    position: absolute;
+    top: 25vh;
+    left: 32vw;
+    width: 32vw;
+    height: 37vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5em;
+    border-radius: 42px;
+    background-color: white;
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+}
+
+.logo {
+    width: 13%;
+    margin-bottom: 1em;
+}
+
+.containerUsuario h2 {
+    font-size: 1.9em;
+    margin: 0.5em 0;
+}
+
+.containerUsuario h3 {
+    font-size: 1em;
+    margin-top: 0em;
+}
+
+.fotoUsuario {
+    width: 5vw;  /* Asegura que el ancho sea igual */
+    height: 5vw; /* Asegura que la altura sea igual */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo2 {
+    position: absolute;
+    width: 9%;
+    top: 40vh;
+    left: 45vw;
+    animation: logoAparicion 2.5s ease-in-out forwards;
+    animation-delay: 3.7s;
+    opacity: 0;
+}
+
+@keyframes logoAparicion {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+}
