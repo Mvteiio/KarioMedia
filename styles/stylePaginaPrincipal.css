@@ -153,5 +153,5 @@ header img, header h2 {
         width: 7vw;  /* Asegura que el ancho sea igual */
         height: 7vw; /* Asegura que la altura sea igual */
         object-fit: cover;
-        
+    }
 }
