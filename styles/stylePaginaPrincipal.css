@@ -98,6 +98,68 @@ header img, header h2 {
     height: 2.5vw; /* Asegura que la altura sea igual */
     object-fit: cover;
     border-radius: 50%;
+    margin: auto;
+}
+
+.textoSuperior {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.textoSuperior h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.textoSuperior h3 {
+    margin: 0;
+}
+
+.containerMayor {
+    margin-top: 4em;
+    margin-bottom: 0;
+}
+
+.primerCajon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    margin-bottom: 1em;
+}
+
+.elemento1 {
+    margin-right: 2em;
+    margin-left: 3em;
+}
+
+.UltimoCajon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.boton {
+    background-color:#ff6f2c ;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    width: 14em;
+    height:3em;
+    border-radius: 32px;
+    display: block;
+    margin: 1em auto;
+}
+
+.boton:hover {
+    background-color: #b95120;
+    cursor: pointer;
+}
+
+.containerCelular {
+    display: none
 }
 
 @media (max-width: 430px) {
@@ -106,6 +168,9 @@ header img, header h2 {
         display: none;
     }
 
+    header {
+        height: 3em;
+    }
     header h2{
         display: none;
     }   
@@ -153,5 +218,62 @@ header img, header h2 {
         width: 7vw;  /* Asegura que el ancho sea igual */
         height: 7vw; /* Asegura que la altura sea igual */
         object-fit: cover;
+        margin: auto;
+    }
+
+    .textoSuperior {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .textoSuperior h2 {
+        font-size: 2em;
+        margin-top: 0.5em;
+    }
+    
+    .textoSuperior h3 {
+        font-size: 1em;
+    }
+
+    .containerMayor {
+        display: none;
+    }
+
+    .containerCelular {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    .cajonCelular {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 1em;
+        margin-left: 10px;
+    }
+
+    .cajonIzquierdoCel {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #000;
+        border-radius: 22px;
+    }
+
+    #categorias {
+        margin-right: 1em;
+    }
+    .cajonIzquierdoCel h3 {
+        margin-left: 1em;
+    }
+
+    .cajonCelular img {
+        margin-left: 0.4em;
+        width: 7%;
+    }
+
+    .boton {
+        margin-top: 2em;
     }
 }
