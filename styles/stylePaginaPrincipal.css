@@ -176,6 +176,8 @@ header img, header h2 {
     display: none
 }
 
+
+
 @media (max-width: 430px) {
     
     .logoKario {
@@ -232,14 +234,15 @@ header img, header h2 {
         width: 7vw;  /* Asegura que el ancho sea igual */
         height: 7vw; /* Asegura que la altura sea igual */
         object-fit: cover;
-        margin: auto;
+        margin-left: 0px;
     }
 
     .textoSuperior {
         display: flex;
         text-align: center;
         flex-direction: column;
-        padding: 10px;
+        padding-right: 10px;
+        margin-left: 0;
     }
     .textoSuperior h2 {
         font-size: 2em;
@@ -265,7 +268,7 @@ header img, header h2 {
         flex-direction: row;
         width: 100%;
         margin-bottom: 1em;
-        margin-left: 10px;
+        margin-left: 7px;
     }
 
     .cajonIzquierdoCel {
@@ -283,8 +286,8 @@ header img, header h2 {
     }
 
     .cajonCelular img {
-        margin-left: 0.4em;
-        width: 7%;
+        margin-left: 0.5em;
+        width: 5%;
     }
 
     .boton {
