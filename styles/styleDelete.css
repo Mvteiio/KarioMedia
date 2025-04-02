@@ -1,0 +1,559 @@
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Myriad Pro Light"), url("../fonts/MyriadPro-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Myriad Pro Regular"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Myriad Pro Bold"), url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+h1 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 700; /* Bold */
+}
+
+h2 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+h3 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 300; /* Light */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+}
+
+.TODO {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+header img, header h2 {
+    margin-right: 15px; /* Agrega espacio a la derecha */
+}
+
+.logoKario {
+    width: 2vw;
+    margin-left: 10vw;
+}
+
+.añadir {
+    margin-left: 8vw;
+    margin-right: 0.3vw;
+    width: 1.3vw;
+}
+
+.refrescar {
+    margin-left: 5vw;
+    margin-right: 0.3vw;
+    width: 1.3vw;
+}
+
+.eliminar {
+    margin-left: 5vw;
+    margin-right: 0.3vw;
+    width: 1.3vw;
+}
+
+.reportBug {
+    margin-left: 10vw;
+    margin-right: 0.3vw;
+    width: 1.5vw;
+}
+
+.ayuda {
+    margin-left: 5vw;
+    margin-right: 0.3vw;
+    width: 1.5vw;
+}
+
+.settings {
+    margin-left: 17vw
+}
+
+.notifications {
+    margin-left: 0vw;
+}
+
+.fotoPerfil {
+    width: 2.5vw;  /* Asegura que el ancho sea igual */
+    height: 2.5vw; /* Asegura que la altura sea igual */
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.textoSuperior {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.textoSuperior h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.textoSuperior h3 {
+    margin: 0;
+}
+
+.containerMayor {
+    margin-top: 4em;
+    margin-bottom: 0;
+}
+
+.primerCajon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    margin-bottom: 1em;
+}
+
+.elemento1 {
+    margin-right: 2em;
+    margin-left: 3em;
+}
+
+.UltimoCajon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.boton {
+    background-color:#ff6f2c ;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    width: 14em;
+    height:3em;
+    border-radius: 32px;
+    display: block;
+    margin: 1em auto;
+}
+
+.boton:hover {
+    background-color: #b95120;
+    cursor: pointer;
+}
+
+.containerCelular {
+    display: none
+}
+
+.primerCheckbox {
+    width: 2em;
+    margin-left: 2em;
+}
+
+.cajones {
+    border: 1px solid black;
+    width: 92vw;
+    margin-left: 2em;
+    height: 4.5em;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.rayitas {
+    margin-left: 2em;
+}
+
+.cajones h3{
+    font-size: 1.5em;
+}
+
+.primerTextoCajaUno {
+    margin-left: 1.2em;
+}
+
+.segundoTextoCajaUno {
+    margin-left: 5.5em;
+}
+
+.tercerTextoCajaUno {
+    margin-left: 4.7em;
+}
+
+.cuartoTextoCajaUno {
+    margin-left: 4em;
+}
+
+.quintoTextoCajaUno {
+    margin-left: 5.7em;
+}
+
+.sextoTextoCajaUno {
+    margin-left: 4.4em;
+}
+
+.septimoTextoCajaUno {
+    margin-left: 3.3em;
+}
+
+.porcentaje {
+    width: 4.5%;
+    margin-left: 7em;
+}
+
+.octavoTextoCajaUno {
+    margin-left: 3em;
+}
+
+/* Segundo Cajon */
+
+.segundoTextoCajaUno2 {
+    margin-left: 5.7em;
+}
+
+.tercerTextoCajaUno2 {
+    margin-left: 3.3em;
+}
+
+.cuartoTextoCajaUno2 {
+    margin-left: 4em;
+}
+
+.quintoTextoCajaUno2 {
+    margin-left: 5.7em;
+}
+
+.sextoTextoCajaUno2 {
+    margin-left: 4.4em;
+}
+
+.septimoTextoCajaUno2 {
+    margin-left: 3.3em;
+}
+
+.porcentaje2 {
+    width: 4.5%;
+    margin-left: 7em;
+}
+
+.octavoTextoCajaUno2 {
+    margin-left: 3em;
+}
+
+/* Tercer Cajon */
+
+.primerTextoCajaUno3 {
+    width: 9em;
+    margin-left: 1.2em;
+}
+
+.segundoTextoCajaUno3 {
+    width: 11em;
+    margin-left: 1.8em;
+}
+
+.tercerTextoCajaUno3 {
+    margin-left: 0.5em;
+}
+
+.cuartoTextoCajaUno3 {
+    margin-left: 3.5em;
+}
+
+.quintoTextoCajaUno3 {
+    margin-left: 5.7em;
+}
+
+.sextoTextoCajaUno3 {
+    margin-left: 4.4em;
+}
+
+.septimoTextoCajaUno3 {
+    margin-left: 3.3em;
+}
+
+.porcentaje3 {
+    width: 4.5%;
+    margin-left: 7em;
+}
+
+.octavoTextoCajaUno3 {
+    margin-left: 3em;
+}
+
+/* Cuarto Cajon */
+
+.primerTextoCajaUno4 {
+    width: 9em;
+    margin-left: 1.2em;
+}
+
+.segundoTextoCajaUno4 {
+    width: 11em;
+    margin-left: 1.8em;
+}
+
+.tercerTextoCajaUno4 {
+    margin-left: 0.5em;
+}
+
+.cuartoTextoCajaUno4 {
+    margin-left: 3.5em;
+}
+
+.quintoTextoCajaUno4 {
+    margin-left: 5.7em;
+}
+
+.sextoTextoCajaUno4 {
+    margin-left: 5.3em;
+}
+
+.septimoTextoCajaUno4 {
+    margin-left: 4.4em;
+}
+
+.porcentaje4 {
+    width: 4%;
+    margin-left: 7em;
+}
+
+.octavoTextoCajaUno4 {
+    margin-left: 3.5em;
+}
+
+/* Quinto Cajon */
+
+.primerTextoCajaUno5 {
+    width: 9em;
+    margin-left: 1.2em;
+}
+
+.segundoTextoCajaUno5 {
+    width: 11em;
+    margin-left: 1.8em;
+}
+
+.tercerTextoCajaUno5 {
+    margin-left: 0.5em;
+}
+
+.cuartoTextoCajaUno5 {
+    margin-left: 4.5em;
+}
+
+.quintoTextoCajaUno5 {
+    margin-left: 5.7em;
+}
+
+.sextoTextoCajaUno5 {
+    margin-left: 4.3em;
+}
+
+.septimoTextoCajaUno5 {
+    margin-left: 3.2em;
+}
+
+.porcentaje5 {
+    width: 4%;
+    margin-left: 7em;
+}
+
+.octavoTextoCajaUno5 {
+    margin-left: 3.5em;
+}
+
+/*Sexto Cajon*/
+
+.primerTextoCajaUno6 {
+    width: 9em;
+    margin-left: 1.2em;
+}
+
+.segundoTextoCajaUno6 {
+    width: 11em;
+    margin-left: 1.8em;
+}
+
+.tercerTextoCajaUno6 {
+    margin-left: 0.5em;
+}
+
+.cuartoTextoCajaUno6 {
+    margin-left: 4.5em;
+}
+
+.quintoTextoCajaUno6 {
+    margin-left: 5.7em;
+}
+
+.sextoTextoCajaUno6 {
+    margin-left: 4.3em;
+}
+
+.septimoTextoCajaUno6 {
+    margin-left: 3.2em;
+}
+
+.porcentaje6 {
+    width: 4%;
+    margin-left: 7em;
+}
+
+.octavoTextoCajaUno6 {
+    margin-left: 3.5em;
+}
+
+
+@media (max-width: 430px) {
+    
+    .logoKario {
+        display: none;
+    }
+
+    header {
+        height: 3em;
+    }
+    header h2{
+        display: none;
+    }   
+    .añadir {
+        margin-left: 4vw;
+        margin-right: 0.3vw;
+        width: 4vw;
+    }
+    
+    .refrescar {
+        margin-left: 5vw;
+        margin-right: 0.3vw;
+        width: 4vw;
+    }
+    
+    .eliminar {
+        margin-left: 5vw;
+        margin-right: 0.3vw;
+        width: 3vw;
+    }
+    
+    .reportBug {
+        margin-left: 10vw;
+        margin-right: 0.3vw;
+        width: 4vw;
+    }
+    
+    .ayuda {
+        margin-left: 5vw;
+        margin-right: 0.3vw;
+        width: 4vw;
+    }
+    
+    .settings {
+        margin-left: 25vw;
+        width: 3vw;
+    }
+    
+    .notifications {
+        margin-left: 0vw;
+        width: 3vw;
+    }
+    
+    .fotoPerfil {
+        width: 7vw;  /* Asegura que el ancho sea igual */
+        height: 7vw; /* Asegura que la altura sea igual */
+        object-fit: cover;
+        margin-left: 0px;
+    }
+
+    .textoSuperior {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding-right: 10px;
+        margin-left: 0;
+    }
+    .textoSuperior h2 {
+        font-size: 2em;
+        margin-top: 0.5em;
+    }
+    
+    .textoSuperior h3 {
+        font-size: 1em;
+    }
+
+    .containerMayor {
+        display: none;
+    }
+
+    .containerCelular {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    .cajonCelular {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 1em;
+        margin-left: 7px;
+    }
+
+    .cajonIzquierdoCel {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #000;
+        border-radius: 22px;
+    }
+
+    #categorias {
+        margin-right: 1em;
+    }
+    .cajonIzquierdoCel h3 {
+        margin-left: 1em;
+    }
+
+    .cajonCelular img {
+        margin-left: 0.5em;
+        width: 5%;
+    }
+
+    .boton {
+        margin-top: 2em;
+    }
+}
