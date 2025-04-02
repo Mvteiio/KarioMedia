@@ -435,9 +435,27 @@ header img, header h2 {
     margin-left: 3.5em;
 }
 
+.headerMovil {
+    display: none;
+}
+
 
 @media (max-width: 430px) {
+
+    .headerPC {
+        display: none;
+    }
     
+    .headerMovil {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        font-size: 0.8em;
+        border-bottom: 1px solid #000;
+    }
+
     .logoKario {
         display: none;
     }

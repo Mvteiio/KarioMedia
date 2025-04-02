@@ -120,117 +120,77 @@ header img, header h2 {
     margin: auto;
 }
 
-.añadirIndicador {
-    text-align: center;
-    font-size: 2.5em;
-}
 
-.primerCajon {
-    border: 1px solid black;
-    width: 21em;
-    margin-left: 10em;
+.container {
+    margin-top: 5em;
     display: flex;
-    flex-direction: column;
-    padding: 2em;
-    border-radius: 20px;
-}
-
-.primerCajon h3 {
-    margin-bottom: 0.2em ;
-    
-}
-
-.primerCajon input {
-    margin-bottom: 1em;
-    box-sizing: border-box;
-    padding: 1em;
-    font-size: 1em;
-}
-
-.segundoCajon {
-    border: 1px solid black;
-    width: 21em;
-    margin-left: 10em;
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    border-radius: 20px;
-}   
-
-.segundoCajon  h3 {
-    margin-bottom: 0.2em ;
-    
-}
-
-.segundoCajon  input {
-    margin-bottom: 1em;
-    box-sizing: border-box;
-    padding: 1em;
-    font-size: 1em;
-}
-
-.tercerCajon {
-    border: 1px solid black;
-    width: 21em;
-    margin-left: 10em;
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    border-radius: 20px;
-}
-
-.tercerCajon  h3 {
-    margin-bottom: 0.2em ;
-    
-}
-
-.tercerCajon  input {
-    margin-bottom: 1em;
-    box-sizing: border-box;
-    padding: 1em;
-    font-size: 1em;
-}
-
-.contenedores {
-    display: flex;
-    width: 100vw;
+    flex-direction: row;
+    width: 80vw;
     height: 60vh;
+    gap: 4em;
+    margin-left: 12em;
+    margin-right: 4em;
+    font-family: 'Myriad Pro', sans-serif;
 }
 
-.contenedores h3 {
-    font-size: 1.7em;
-}
-
-.contenedores input {
-    background-color: #f9c8a9;
-    height: 3.3em;
-    border: none;
-    border-radius: 16px;
-}
-
-.botonAñadir {
-    background-color:#ff6f2c ;
-    border: none;
-    color: white;
-    width: 15vw;
-    height: 3em;
-    margin-left: 42%;
-    margin-top: 2em;
+.primeraCaja {
+    border: 1px solid #000;
+    text-align: center;
     padding: 1em;
-    font-size: 1.5em;
-    box-sizing: border-box;
-    font-family: "Myriad Pro", sans-serif;
-    border-radius: 32px;
+    width: 15em;
+    font-size: 2em;
+    border-radius: 22px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.botonAñadir:hover {
-    background-color: #c75520;
-    cursor: pointer;
+.primeraCaja:hover {
+    transform: scale(1.05); /* Aumenta un 10% el tamaño */
+}
+
+.segundaCaja {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 1em;
+    width: 15em;
+    font-size: 2em;
+    border-radius: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.segundaCaja:hover {
+    transform: scale(1.05); /* Aumenta un 10% el tamaño */
+}
+
+
+.terceraCaja {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 1em;
+    width: 15em;
+    font-size: 2em;
+    border-radius: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.terceraCaja:hover {
+    transform: scale(1.05); /* Aumenta un 10% el tamaño */
+}
+
+
+span {
+    color: #ff6f2c;
+}
+
+#pregunta {
+    color: #ff6f2c;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
 }
 
 .headerMovil {
     display: none;
-}
+} 
 
 @media (max-width: 430px) {
 
@@ -358,41 +318,28 @@ header img, header h2 {
         width: 5%;
     }
 
-    .botonAñadir {
-        margin-top: 39em;
-        width: 50%;
-        margin-left: 4.5em;
-        margin-bottom: 1em;
+    .boton {
+        margin-top: 2em;
     }
 
-    .contenedores {
+    .container {
         display: flex;
         flex-direction: column;
-        margin-left: 1.5em;
-
+        margin-left: 1.4em;
     }
 
-    .primerCajon {
-        margin-left: 0em;
-        width: 74vw;
-        margin-bottom: 2em;
+    .primeraCaja {
+        width: 75vw;
+        height: 67vh;
     }
 
-    .segundoCajon {
-        margin-left: 0em;
-        width: 74vw;
-        margin-bottom: 2em;
+    .segundaCaja {
+        width: 75vw;
+        height: 67vh;
     }
 
-    .tercerCajon {
-        margin-left: 0em;
-        width: 74vw;
-        margin-bottom: 2em;
+    .terceraCaja {
+        width: 75vw;
+        height: 67vh;
     }
-
-    .añadirIndicador    {
-        margin-left: 2em;
-        text-align: left;
-    }
-
 }
