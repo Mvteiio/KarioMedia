@@ -54,6 +54,10 @@ El objetivo fue lograr un sitio web atractivo y funcional, implementando animaci
 
 ---  
 
+## **Maquetación hecha en Figma**
+
+[Aqui](https://www.figma.com/design/rLjpfVfVB2Hk4mXwo9eHPs/Untitled?node-id=0-1&t=PGGgTBGUOReiKFJ0-1)Encontraras la maquetación base en la cual se basó el diseño de las paginas de: **Añadir, Reportar, Eliminar y Ayuda**
+
 ## 📌 **Estado del proyecto**  
 
 Este proyecto ha sido **finalizado** y no se aceptan contribuciones.  
