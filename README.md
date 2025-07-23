@@ -1,4 +1,4 @@
-# 🎨 **PROYECTO FILTRO**  
+# 🎨 **PROYECTO Kario Media**  
 
 En este proyecto, desarrollamos una página web **estática y estética**, diseñada exclusivamente con **HTML y CSS**. Basándonos en un wireframe proporcionado por el profesor, creamos un diseño moderno y atractivo con animaciones básicas y una estructura adaptable a diferentes pantallas.  
 
